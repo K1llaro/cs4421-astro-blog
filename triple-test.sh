@@ -3,6 +3,11 @@
 # Terminate execution immediately if any command fails
 set -e
 
+export GIT_AUTHOR_NAME="Kyrylo Kuzmenko"
+export GIT_AUTHOR_EMAIL="dinosaurkiril@gmail.com"
+export GIT_COMMITTER_NAME="Kyrylo Kuzmenko"
+export GIT_COMMITTER_EMAIL="dinosaurkiril@gmail.com"
+
 # Terminal output colors
 GREEN='\033[0;32m'
 CYAN='\033[0;36m'
@@ -153,9 +158,6 @@ echo -e "${GREEN}✔ GitHub Actions workflow created and merged!${NC}"
 echo -e "\n${YELLOW}==> [5/5] Performing final full sanity checks on 'setup-infra'...${NC}"
 npm run lint
 npm run test
-
-echo -e "\n${CYAN}Generated Git Commit Graph:${NC}"
-git log --graph --oneline --decorate -n 12
 
 # ----------------------------------------------------------------
 # Interruption / Pause Point before main

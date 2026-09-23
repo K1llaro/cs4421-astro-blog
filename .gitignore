@@ -1,5 +1,8 @@
 # build output
 dist/
+triple-test.sh
+eslint.config.js
+test/
 
 # generated types
 .astro/
