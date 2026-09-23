@@ -14,13 +14,6 @@ echo -e "${CYAN}================================================================
 echo -e "${CYAN}       AUTOMATED INFRASTRUCTURE SETUP (LINT, TEST, CI)         ${NC}"
 echo -e "${CYAN}================================================================${NC}"
 
-# Check for uncommitted changes
-if [ -n "$(git status --porcelain)" ]; then
-  echo -e "${RED}Error: Working directory has uncommitted changes.${NC}"
-  echo "Please commit or stash your changes before running this script."
-  exit 1
-fi
-
 # ----------------------------------------------------------------
 # Step 1: Base setup (main and integration branch)
 # ----------------------------------------------------------------
