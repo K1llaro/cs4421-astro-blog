@@ -9,6 +9,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "test:unit": "vitest",
     "astro": "astro"
   },
   "dependencies": {
@@ -16,5 +17,8 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "vitest": "^5.0.1"
   }
 }
