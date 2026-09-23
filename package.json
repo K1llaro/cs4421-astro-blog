@@ -9,6 +9,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "lint": "eslint .",
     "astro": "astro"
   },
   "dependencies": {
@@ -16,5 +17,10 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "eslint": "^10.11.0",
+    "eslint-plugin-astro": "^3.2.1",
+    "vitest": "^5.0.1"
   }
 }
